@@ -105,12 +105,12 @@ class RouteTwo extends StatelessWidget {
       body: Column(
         children: [
           AspectRatio(
-            aspectRatio: 1,
+            aspectRatio: 1.4,
             child: InteractiveViewer(
-              //width: double.infinity,
               child: Image(
                 image: AssetImage(image),
               ),
+              panEnabled: true,
             ),
           ),
           Container(

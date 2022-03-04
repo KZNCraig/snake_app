@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import './firstpage.dart' ;
 import './secondpage.dart';
@@ -72,11 +73,11 @@ class _MyHomePageState extends State<MyHomePage>
           ],
         ),
       ),
-      body: TabBarView(controller: controller, children:  <Widget>[
-        RouteOne(),
-        const SecondPage(),
-        const ThirdPage(),
-        const FourthPage(),
+      body: TabBarView(physics: const NeverScrollableScrollPhysics(),controller: controller, children:  const <Widget>[
+        FourthPage(),
+        SecondPage(),
+        ThirdPage(),
+        FourthPage(),
       ]),
 
     );

@@ -59,8 +59,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
-  carousel_slider: ^4.0.0
+  #carousel_slider: ^4.0.0
   photo_view: ^0.13.0
+  sqflite: ^2.0.2
+  path_provider: ^2.0.9
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -86,6 +88,8 @@ flutter:
      - assets/tile-images/
      - assets/images/species/
      - assets/images/species/black-mamba-images/
+     - assets/species-data/
+     - assets/database-taxa/taxon.db
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
